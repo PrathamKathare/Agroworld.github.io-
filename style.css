@@ -8,56 +8,59 @@
 /* Global Styles */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f9f4e1; /* Light beige background */
+    background-color: #faf3e0; /* Light beige background */
     margin: 0;
-    padding: 20px;
+    padding: 40px;
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Aligns content towards the top */
+    align-items: flex-start;
     min-height: 100vh;
+    background-image: linear-gradient(135deg, #faf3e0 30%, #e3d8b6 100%);
 }
 
 /* Main Container */
 section {
-    background-color: #fff8e1; /* Soft beige background for the main section */
-    padding: 2rem;
-    width: 90%;
-    max-width: 800px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Softer, deeper shadow */
-    border-radius: 12px;
+    background-color: #ffffff;
+    padding: 3rem;
+    width: 80%;
+    max-width: 900px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Softer, deeper shadow */
+    border-radius: 15px;
     text-align: center;
     margin-top: 30px;
-    transition: transform 0.3s ease; /* Smooth hover effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 section:hover {
-    transform: translateY(-5px); /* Slight lift effect on hover */
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Larger shadow on hover */
 }
 
 /* Header */
 header {
     background-color: #6b8e23; /* Olive green background */
     color: white;
-    padding: 2rem;
-    border-radius: 12px;
-    margin-bottom: 1.5rem;
+    padding: 3rem;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    text-align: center;
 }
 
 header h1 {
-    font-size: 2.5rem; /* Larger font size for a bolder header */
-    margin: 0;
+    font-size: 3rem; /* Larger, bold header */
+    margin-bottom: 1rem;
 }
 
 header p {
-    margin: 1rem 0 0;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
+    margin-top: 1rem;
 }
 
 /* Section Titles */
 h2 {
-    color: #6b8e23; /* Olive green for section headings */
+    color: #6b8e23;
+    font-size: 1.8rem;
     margin-bottom: 1rem;
-    font-size: 1.5rem;
     font-weight: 600;
 }
 
@@ -65,73 +68,115 @@ h2 {
 ul {
     list-style: none;
     padding: 0;
+    margin-top: 1.5rem;
 }
 
 ul li {
-    background-color: #f1f8e9; /* Light beige with greenish tint */
-    margin-bottom: 0.75rem;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* Soft shadow on list items */
+    background-color: #f3f7f3; /* Soft light green background */
+    padding: 1.25rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 ul li:hover {
-    background-color: #e8f5e9; /* Slightly darker beige for hover effect */
-    transform: translateX(5px); /* Small horizontal slide on hover */
+    background-color: #e1f3e1; /* Slightly darker green on hover */
+    transform: translateX(5px);
 }
 
 /* Links */
 a {
-    color: #6b8e23; /* Olive green for links */
+    color: #6b8e23;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1.1rem;
 }
 
 a:hover {
     text-decoration: underline;
-    color: #4b6c1f; /* Slightly darker shade of olive on hover */
+    color: #4b6c1f;
 }
 
 /* Definition List */
 dl dt {
     font-weight: bold;
     color: #333;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     font-size: 1.1rem;
 }
 
 dl dd {
     margin-left: 1.5rem;
     color: #666;
+    font-size: 1rem;
 }
 
 /* Blockquote */
 blockquote {
     font-style: italic;
     color: #555;
-    border-left: 6px solid #6b8e23; /* Olive green border */
-    padding-left: 1rem;
+    border-left: 6px solid #6b8e23;
+    padding-left: 1.25rem;
     margin-top: 2rem;
+    font-size: 1.3rem;
+}
+
+/* Team Members Section */
+ul.team-members {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Responsive grid */
+    gap: 2rem;
+    padding: 0;
+    margin-top: 2rem;
+}
+
+ul.team-members li {
+    background-color: #f8f8f8;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+ul.team-members li:hover {
+    background-color: #e3e3e3;
+    transform: translateY(-8px); /* Slight lift effect on hover */
+}
+
+ul.team-members li strong {
+    display: block;
     font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #6b8e23; /* Olive green for team IDs */
+}
+
+ul.team-members li span {
+    font-size: 1rem;
+    color: #777;
 }
 
 /* Responsive Design */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     section {
-        padding: 1.5rem;
+        padding: 2rem;
     }
 
     header {
-        padding: 1.5rem;
+        padding: 2rem;
     }
 
     header h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     h2 {
-        font-size: 1.3rem;
+        font-size: 1.6rem;
     }
 
     ul li {
@@ -139,6 +184,20 @@ blockquote {
     }
 
     blockquote {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    ul.team-members {
+        grid-template-columns: 1fr 1fr;
     }
 }
