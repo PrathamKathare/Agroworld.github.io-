@@ -208,7 +208,8 @@ th {
 .member-name {
     font-size: 22px;
     font-weight: bold;
-    color: #00e5ff; /* Bright blue-green */
+        color: #2e8b57; /* Green color on hover */
+;
     margin-bottom: 10px;
 }
 
