@@ -455,3 +455,10 @@ a:hover
 {
     color: #2e8b57;
 }
+.project-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
