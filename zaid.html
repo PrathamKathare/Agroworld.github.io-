@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    </style>
+</head>
+<body>
+
+    <h1>Algorithms Use Cases in Medical and Education Domains</h1>
+
+    <!-- Dijkstra’s Algorithm Section -->
+    <div class="section">
+        <h2>Dijkstra’s Algorithm</h2>
+        
+        <!-- Medical Use Case -->
+        <div class="algorithm">
+            <h3>Medical</h3>
+            <p><strong>Use Case:</strong> Optimize ambulance routes for emergencies to minimize response times.</p>
+            <p><strong>Implementation:</strong> Represent hospitals and clinics as nodes, and roads as weighted edges (weights based on distance or traffic). Dijkstra's algorithm finds the shortest path from a hospital to the clinic or vice versa.</p>
+        </div>
+
+        <!-- Education Use Case -->
+        <div class="algorithm">
+            <h3>Education</h3>
+            <p><strong>Use Case:</strong> Minimize student travel time by finding the optimal bus route to schools.</p>
+            <p><strong>Implementation:</strong> Map bus stops and schools as nodes with road networks as weighted edges. Use Dijkstra’s algorithm to ensure the shortest bus route for pickups.</p>
+        </div>
+    </div>
+
+    <!-- Floyd-Warshall Algorithm Section -->
+    <div class="section">
+        <h2>Floyd-Warshall Algorithm</h2>
+        
+        <!-- Medical Use Case -->
+        <div class="algorithm">
+            <h3>Medical</h3>
+            <p><strong>Use Case:</strong> Precompute shortest paths between all hospitals and clinics for dispatch efficiency.</p>
+            <p><strong>Implementation:</strong> A graph with hospitals and clinics as nodes is used to calculate the shortest paths between all pairs. This helps in real-time decision-making.</p>
+        </div>
+
+        <!-- Education Use Case -->
+        <div class="algorithm">
+            <h3>Education</h3>
+            <p><strong>Use Case:</strong> Identify optimal paths between schools for shared resources or collaboration.</p>
+            <p><strong>Implementation:</strong> Use a graph with schools as nodes to compute shortest paths for joint activities, like inter-school events or shared facilities.</p>
+        </div>
+    </div>
+
+    <!-- AVL Tree Operations Section -->
+    <div class="section">
+        <h2>AVL Tree Operations</h2>
+        
+        <!-- Medical Use Case -->
+        <div class="algorithm">
+            <h3>Medical</h3>
+            <p><strong>Use Case:</strong> Maintain a balanced database of hospitals and clinics for efficient lookup and updates.</p>
+            <p><strong>Implementation:</strong> Each node represents a facility, and AVL ensures O(logn) operations for searching, inserting, and deleting data about new or removed facilities.</p>
+        </div>
+
+        <!-- Education Use Case -->
+        <div class="algorithm">
+            <h3>Education</h3>
+            <p><strong>Use Case:</strong> Store and organize school data (e.g., student count, teacher details).</p>
+            <p><strong>Implementation:</strong> AVL trees help balance updates like the addition of a new school or changes in student enrollment.</p>
+        </div>
+    </div>
+
+    <!-- Merge Sort Section -->
+    <div class="section">
+        <h2>Merge Sort</h2>
+        
+        <!-- Medical Use Case -->
+        <div class="algorithm">
+            <h3>Medical</h3>
+            <p><strong>Use Case:</strong> Sort patient records (e.g., based on severity levels).</p>
+            <p><strong>Implementation:</strong> Use Merge Sort to handle large patient datasets, ensuring stability in sorting by attributes like age or priority.</p>
+        </div>
+
+        <!-- Education Use Case -->
+        <div class="algorithm">
+            <h3>Education</h3>
+            <p><strong>Use Case:</strong> Sort students by grades or attendance records.</p>
+            <p><strong>Implementation:</strong> Merge Sort organizes large datasets for report generation.</p>
+        </div>
+    </div>
+
+    <!-- Quick Sort Section -->
+    <div class="section">
+        <h2>Quick Sort</h2>
+        
+        <!-- Medical Use Case -->
+        <div class="algorithm">
+            <h3>Medical</h3>
+            <p><strong>Use Case:</strong> Sort available hospital beds quickly during emergencies.</p>
+            <p><strong>Implementation:</strong> Quick Sort is used for in-place sorting of beds based on availability or proximity.</p>
+        </div>
+
+        <!-- Education Use Case -->
+        <div class="algorithm">
+            <h3>Education</h3>
+            <p><strong>Use Case:</strong> Sort exam results for faster publication.</p>
+            <p><strong>Implementation:</strong> Quick Sort ensures efficient in-place sorting of students' scores or roll numbers.</p>
+        </div>
+    </div>
+
+    <!-- Hashing Section -->
+    <div class="section">
+        <h2>Hashing</h2>
+        
+        <!-- Medical Use Case -->
+        <div class="algorithm">
+            <h3>Medical</h3>
+            <p><strong>Use Case:</strong> Quickly retrieve hospital or clinic information based on location.</p>
+            <p><strong>Implementation:</strong> Hash Tables provide constant time access to facility data, enabling rapid queries during emergencies.</p>
+        </div>
+
+        <!-- Education Use Case -->
+        <div class="algorithm">
+            <h3>Education</h3>
+            <p><strong>Use Case:</strong> Access student data efficiently by roll numbers or IDs.</p>
+            <p><strong>Implementation:</strong> Use Hash Tables to store student records for quick lookup during exams or attendance tracking.</p>
+        </div>
+    </div>
+
+    <!-- Min-Heap Operations Section -->
+    <div class="section">
+        <h2>Min-Heap Operations</h2>
+        
+        <!-- Medical Use Case -->
+        <div class="algorithm">
+            <h3>Medical</h3>
+            <p><strong>Use Case:</strong> Prioritize ambulance dispatch based on urgency.</p>
+            <p><strong>Implementation:</strong> Min-Heap maintains a queue of emergencies, ensuring the most urgent cases are handled first.</p>
+        </div>
+
+        <!-- Education Use Case -->
+        <div class="algorithm">
+            <h3>Education</h3>
+            <p><strong>Use Case:</strong> Prioritize bus routes based on student pickup urgency.</p>
+            <p><strong>Implementation:</strong> Min-Heap is used to manage the order of stops for efficient scheduling.</p>
+        </div>
+    </div>
+
+    <!-- Union-Find Algorithm Section -->
+    <div class="section">
+        <h2>Union-Find Algorithm</h2>
+        
+        <!-- Medical Use Case -->
+        <div class="algorithm">
+            <h3>Medical</h3>
+            <p><strong>Use Case:</strong> Group nearby facilities for resource sharing (e.g., medicines, doctors).</p>
+            <p><strong>Implementation:</strong> Union-Find clusters hospitals and clinics into regions to facilitate shared resources.</p>
+        </div>
+
+        <!-- Education Use Case -->
+        <div class="algorithm">
+            <h3>Education</h3>
+            <p><strong>Use Case:</strong> Group nearby schools for collaboration.</p>
+            <p><strong>Implementation:</strong> Union-Find connects schools within a region for joint initiatives like sports or training.</p>
+        </div>
+    </div>
+
+    <!-- Add more sections as needed -->
+
+</body>
+</html>
