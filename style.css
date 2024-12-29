@@ -413,4 +413,16 @@ th {
         font-size: 18px;
     }
 }
-
+.phase-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #004d33;
+    
+}
+button.phase-button{
+    background-color:#333;
+    color: white;
+    padding: 20px 20px;
+    font-size: 20px;
+}
