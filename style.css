@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    margin: 0;
+    margin: 100px;
     font-family: 'Poppins', sans-serif;
     background-color: #121212; /* Dark background for a night mode feel */
     color: #e0e0e0; /* Light text for readability */
