@@ -420,12 +420,21 @@ th {
     
 }
 
-button.phase-button{
-    background-color:#333;
+button.phase-button {
+    background-color: #333;
     color: white;
     padding: 20px 20px;
     font-size: 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for color and scale */
 }
+
+button.phase-button:hover {
+    background-color: #555; /* Lighter background color when hovered */
+    transform: scale(1.1); /* Scale up the button to make it pop */
+}
+
 .reflection-links
 {
     background-color:#333;
